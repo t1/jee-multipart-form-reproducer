@@ -1,0 +1,14 @@
+= JEE Multipart Form Demo
+
+Reproduce an https://issues.redhat.com/browse/RESTEASY-3463[issue] in RESTEasy.
+
+Run with:
+
+[source,bash]
+----
+mvn wildfly:dev
+----
+
+And open http://localhost:8080
+
+The first form works, the second doesn't (you'll have to look into the browser dev tools to see the 400 Bad Request response).
